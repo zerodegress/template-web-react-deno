@@ -9,6 +9,7 @@
   "compilerOptions": {
     "lib": ["esnext", "deno.window"]
   },
+  "nodeModulesDir": "auto",
   "imports": {
     "@eslint/js": "npm:@eslint/js@^9.32.0",
     "@preact/signals-react": "npm:@preact/signals-react@^3.2.1",
