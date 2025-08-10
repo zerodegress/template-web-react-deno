@@ -1,0 +1,30 @@
+{
+  "tasks": {
+    "dev": "deno run -A --node-modules-dir vite dev",
+    "build": "deno run -A eslint && deno run -A --node-modules-dir vite build",
+    "preview": "deno run -A --node-modules-dir vite preview",
+    "test": "deno run -A --node-modules-dir vitest run",
+    "test-watch": "deno run -A --node-modules-dir vitest watch"
+  },
+  "compilerOptions": {
+    "lib": ["esnext", "deno.window"]
+  },
+  "imports": {
+    "@eslint/js": "npm:@eslint/js@^9.32.0",
+    "@preact/signals-react": "npm:@preact/signals-react@^3.2.1",
+    "@preact/signals-react-transform": "npm:@preact/signals-react-transform@^0.5.2",
+    "@types/react": "npm:@types/react@^19.1.9",
+    "@types/react-dom": "npm:@types/react-dom@^19.1.7",
+    "@vitejs/plugin-react": "npm:@vitejs/plugin-react@^4.7.0",
+    "eslint": "npm:eslint@^9.32.0",
+    "eslint-plugin-promise": "npm:eslint-plugin-promise@^7.2.1",
+    "eslint-plugin-react": "npm:eslint-plugin-react@^7.37.5",
+    "prettier": "npm:prettier@^3.6.2",
+    "react": "npm:react@^19.1.1",
+    "react-dom": "npm:react-dom@^19.1.1",
+    "typescript-eslint": "npm:typescript-eslint@^8.39.0",
+    "vite": "npm:rolldown-vite@^7.0.12",
+    "vitest": "npm:vitest@^3.2.4"
+  },
+  "workspace": ["./src"]
+}

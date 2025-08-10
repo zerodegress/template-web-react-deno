@@ -1,0 +1,48 @@
+{
+  "lsp": {
+    "deno": {
+      "settings": {
+        "deno": {
+          "enable": true,
+          "lint": false
+        }
+      }
+    },
+    "oxc": {
+      "settings": {
+        "oxc": {
+          "require_config_file": true
+        }
+      }
+    }
+  },
+  "languages": {
+    "JavaScript": {
+      "language_servers": [
+        "deno",
+        "eslint",
+        "!typescript-language-server",
+        "!vtsls"
+      ],
+      "formatter": "prettier"
+    },
+    "TypeScript": {
+      "language_servers": [
+        "deno",
+        "eslint",
+        "!typescript-language-server",
+        "!vtsls"
+      ],
+      "formatter": "prettier"
+    },
+    "TSX": {
+      "language_servers": [
+        "deno",
+        "eslint",
+        "!typescript-language-server",
+        "!vtsls"
+      ],
+      "formatter": "prettier"
+    }
+  }
+}
