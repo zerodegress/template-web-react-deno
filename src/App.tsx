@@ -1,9 +1,9 @@
-import { useSignal } from '@preact/signals-react'
 import reactLogo from './assets/react.svg'
 import './App.css'
+import { useState } from 'react'
 
 function App() {
-  const count = useSignal(0)
+  const [count, setCount] = useState(0)
 
   return (
     <>
@@ -18,8 +18,8 @@ function App() {
       </div>
       <h1>Vite + React</h1>
       <div className='card'>
-        <button onClick={() => (count.value += 1)}>
-          count is {count.value}
+        <button onClick={() => setCount(prev => prev + 1)}>
+          count is {count}
         </button>
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
